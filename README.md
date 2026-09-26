@@ -4,9 +4,9 @@
 
 # r7Harness
 
-r7Harness is a simplified version of my own OMP-based agent workspace. I use the original setup for fast, direct technical work, and this version keeps the useful parts without any of my personal configuration.
+r7Harness is a simplified version of my own OMP-based agent workspace.
 
-I started building it because the harness around an agent matters almost as much as the model inside it. A cleaner terminal, better instructions, visible timing, separate profiles and a few safeguards make the whole thing a lot easier to use.
+I started building it because the harness around an agent matters almost as much as the model inside it.
 
 - Compact workspace with session titles, turn timing, usage, status and a composer that stays put
 - Titles that show how big the current task is (quick, check, cook or deep) with a time estimate
