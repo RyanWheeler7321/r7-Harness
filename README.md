@@ -1,8 +1,8 @@
+![r7Harness terminal workspace](assets/r7harness-main.png)
+
 <img src="assets/icon.svg" alt="r7Harness icon" width="96">
 
 # r7Harness
-
-![r7Harness terminal workspace](assets/r7harness-main.png)
 
 r7Harness is a simplified version of my own OMP-based agent workspace. I use the original setup for fast, direct technical work, and this version keeps the useful parts without any of my personal configuration.
 
@@ -14,7 +14,7 @@ I started building it because the harness around an agent matters almost as much
 - Global and project instructions, reusable skills and a few workflow keywords like "update"
 - Idle and working themes that follow the agent's state (`/theme` to switch), plus a list of good terminal fonts
 - Readiness checks, tool limits and file ownership so subagents don't step on each other
-- A pinned OMP build (currently 18.3.2) that's checkable and easy to roll back to stock OMP
+- A pinned, hash-checked OMP build (currently 18.3.2) that's easy to roll back to an earlier build
 - If RTK is installed, common read and test commands go through it for shorter output
 - A small optional AutoHotkey script for opening and arranging harness windows in Windows Terminal
 
