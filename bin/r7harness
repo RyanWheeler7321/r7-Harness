@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# runs scripts/r7harness.py from this repo without writing __pycache__
+set -euo pipefail
+
+# readlink so it still finds the repo when run through a symlink in ~/.local/bin
+script_dir="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
+repository_root="$(dirname -- "$script_dir")"
+exec env PYTHONDONTWRITEBYTECODE=1 python3 -B "$repository_root/scripts/r7harness.py" "$@"

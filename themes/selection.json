@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "idle": {
+    "theme": "rose-signal",
+    "contrast": 100
+  },
+  "working": {
+    "theme": "crimson-voltage",
+    "contrast": 100
+  }
+}

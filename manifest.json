@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "name": "r7Harness",
+  "version": "0.1.0",
+  "harnessVersion": "0.1.0",
+  "draft": false,
+  "omp": {
+    "version": "18.3.2",
+    "upstreamVersion": "18.3.2",
+    "patchVersion": "r7h2",
+    "repository": "https://github.com/can1357/oh-my-pi",
+    "tag": "v18.3.2",
+    "commit": "7853b4e499936f9dcc13c9b64adb55f6b342aabf",
+    "sourceUrl": "https://github.com/can1357/oh-my-pi/archive/7853b4e499936f9dcc13c9b64adb55f6b342aabf.tar.gz",
+    "sourceSha256": "1731978ba5ad47d5a09f08ef449d33699755d4a6cfa9214bd31620411ae170b2",
+    "patch": "patches/omp-18.3.2-r7h2.patch",
+    "patchSha256": "3e759b22ea3c344136f4c13df3b72635afe2aa03169d3cac5b6987f5f083e0a4",
+    "natives": {
+      "linux-x64": {
+        "url": "https://registry.npmjs.org/@oh-my-pi/pi-natives-linux-x64/-/pi-natives-linux-x64-18.3.2.tgz",
+        "sha256": "d3ca8b2f0a2c0d9863681afc1496516109ef6d4d4ae6c0a237b454c20d22a528"
+      }
+    }
+  },
+  "bun": {
+    "version": "1.4.0",
+    "repository": "https://github.com/oven-sh/bun",
+    "release": "https://github.com/oven-sh/bun/releases/tag/bun-v1.4.0",
+    "requiredForBuild": true
+  },
+  "paths": {
+    "configRoot": "~/.config/r7harness",
+    "dataRoot": "~/.local/share/r7harness",
+    "profileRoot": "~/.omp/profiles/{agentSlug}/agent"
+  },
+  "platforms": {
+    "wsl2-windows-terminal": "supported",
+    "linux-x64": "untested",
+    "macos": "experimental",
+    "windows-native": "unsupported"
+  },
+  "optional": {
+    "rtk": {
+      "repository": "https://github.com/rtk-ai/rtk",
+      "bundled": false
+    },
+    "windowsCompanion": {
+      "path": "extras/windows/r7Harness.ahk",
+      "requires": "AutoHotkey v2",
+      "bundledRuntime": false
+    }
+  }
+}

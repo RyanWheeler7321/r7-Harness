@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "defaultPair": {
+    "idle": "rose-signal",
+    "working": "crimson-voltage"
+  },
+  "themes": [
+    {
+      "id": "rose-signal",
+      "label": "Rose Signal",
+      "description": "Warm rose framing with soft pink status colors.",
+      "palette": {
+        "bg": "#070305",
+        "panel": "#200F18",
+        "text": "#FFE8F1",
+        "bright": "#FFF2F7",
+        "muted": "#C8A9B7",
+        "dim": "#A17D8C",
+        "accent": "#FF4F9A",
+        "deep": "#B52A68",
+        "success": "#E87AAE",
+        "outer": "#FF83B8",
+        "gold": "#F0B4C9",
+        "folder": "#FFD1DF",
+        "warning": "#FF8A6B",
+        "fast": "#FF6B52",
+        "error": "#FF405F",
+        "subtle": "#482434"
+      }
+    },
+    {
+      "id": "crimson-voltage",
+      "label": "Crimson Voltage",
+      "description": "Crimson structure with coral and amber highlights.",
+      "palette": {
+        "bg": "#0A0203",
+        "panel": "#290A0E",
+        "text": "#FFE9E7",
+        "bright": "#FFF4F1",
+        "muted": "#D2AAA8",
+        "dim": "#AA7C7B",
+        "accent": "#FF3E52",
+        "deep": "#B81F34",
+        "success": "#FF7A82",
+        "outer": "#FF6675",
+        "gold": "#FFD09A",
+        "folder": "#FFD35F",
+        "warning": "#FF9A4A",
+        "fast": "#FF6A35",
+        "error": "#FF1F3D",
+        "subtle": "#521A20"
+      }
+    },
+    {
+      "id": "wine-circuit",
+      "label": "Wine Circuit",
+      "description": "Wine-red surfaces with pink and violet contrast.",
+      "palette": {
+        "bg": "#0C0305",
+        "panel": "#2E0C18",
+        "text": "#FFE7EF",
+        "bright": "#FFF2F6",
+        "muted": "#CFA8B8",
+        "dim": "#A47589",
+        "accent": "#E94F87",
+        "deep": "#9F2855",
+        "success": "#C87AFF",
+        "outer": "#F58ABD",
+        "gold": "#E6B3C5",
+        "folder": "#F3C2D3",
+        "warning": "#FF9B67",
+        "fast": "#F47055",
+        "error": "#FF4D6D",
+        "subtle": "#581F33"
+      }
+    },
+    {
+      "id": "violet-pulse",
+      "label": "Violet Pulse",
+      "description": "Cool violet structure with a restrained rose accent.",
+      "palette": {
+        "bg": "#05040E",
+        "panel": "#1D1536",
+        "text": "#F0EBFF",
+        "bright": "#FAF7FF",
+        "muted": "#ABA5C9",
+        "dim": "#80799C",
+        "accent": "#8E7CFF",
+        "deep": "#5147B8",
+        "success": "#E65CA9",
+        "outer": "#AD9BFF",
+        "gold": "#C7B7E4",
+        "folder": "#D9C9F1",
+        "warning": "#F19A70",
+        "fast": "#EA6A63",
+        "error": "#F04F78",
+        "subtle": "#3C3262"
+      }
+    },
+    {
+      "id": "graphite-rose",
+      "label": "Graphite Rose",
+      "description": "Neutral graphite surfaces with controlled rose color.",
+      "palette": {
+        "bg": "#050606",
+        "panel": "#1D181D",
+        "text": "#F3E8EE",
+        "bright": "#FCF5F8",
+        "muted": "#B5A6AE",
+        "dim": "#8A7E85",
+        "accent": "#E85D96",
+        "deep": "#94405F",
+        "success": "#C979A1",
+        "outer": "#F28AB7",
+        "gold": "#D6B6C3",
+        "folder": "#E5C9D3",
+        "warning": "#E79876",
+        "fast": "#DE6F62",
+        "error": "#E9506C",
+        "subtle": "#41303D"
+      }
+    },
+    {
+      "id": "black-cherry",
+      "label": "Black Cherry",
+      "description": "Near-black cherry surfaces with sharp red-pink accents.",
+      "palette": {
+        "bg": "#080204",
+        "panel": "#230A12",
+        "text": "#FFE9EC",
+        "bright": "#FFF4F5",
+        "muted": "#C6A5AB",
+        "dim": "#9C7B82",
+        "accent": "#F03A61",
+        "deep": "#A3183A",
+        "success": "#DC5A88",
+        "outer": "#FF5C82",
+        "gold": "#E7B4BD",
+        "folder": "#F2CAD1",
+        "warning": "#F68964",
+        "fast": "#F05E4F",
+        "error": "#FF274F",
+        "subtle": "#4C1824"
+      }
+    },
+    {
+      "id": "glacier-ink",
+      "label": "Glacier Ink",
+      "description": "Deep ink surfaces with ice-blue structure and teal success.",
+      "palette": {
+        "bg": "#04090E",
+        "panel": "#10202C",
+        "text": "#E8F6FF",
+        "bright": "#F6FCFF",
+        "muted": "#A4BECD",
+        "dim": "#718D9E",
+        "accent": "#4AB8FF",
+        "deep": "#2478B4",
+        "success": "#4FE0C1",
+        "outer": "#83D7FF",
+        "gold": "#B6D9E9",
+        "folder": "#C7ECFF",
+        "warning": "#FFB66B",
+        "fast": "#F4875B",
+        "error": "#FF5974",
+        "subtle": "#1B3B4D"
+      }
+    },
+    {
+      "id": "amber-noir",
+      "label": "Amber Noir",
+      "description": "Charcoal and amber for a warm, low-glare alternative.",
+      "palette": {
+        "bg": "#090806",
+        "panel": "#211D14",
+        "text": "#FFF4DF",
+        "bright": "#FFF9EF",
+        "muted": "#C6B79D",
+        "dim": "#93836C",
+        "accent": "#F2AE49",
+        "deep": "#A66720",
+        "success": "#9ED07A",
+        "outer": "#FFD47E",
+        "gold": "#F6D896",
+        "folder": "#FFE6AF",
+        "warning": "#FF9B5A",
+        "fast": "#EF7444",
+        "error": "#F15454",
+        "subtle": "#463B25"
+      }
+    },
+    {
+      "id": "magenta-night",
+      "label": "Magenta Night",
+      "description": "Deep magenta with cyan success contrast.",
+      "palette": {
+        "bg": "#0C030B", "panel": "#2E0C2C", "text": "#FFE8FB", "bright": "#FFF2FF",
+        "muted": "#CCA9C8", "dim": "#A37BA0", "accent": "#FF3DDE", "deep": "#A72899",
+        "success": "#66D9EF", "outer": "#F15CFF", "gold": "#F0B5DC", "folder": "#F8C8E9",
+        "warning": "#FF8BAA", "fast": "#FF6A8D", "error": "#FF3E6C", "subtle": "#5A1D56"
+      }
+    },
+    {
+      "id": "plum-neon",
+      "label": "Plum Neon",
+      "description": "Plum surfaces with violet and neon pink accents.",
+      "palette": {
+        "bg": "#08040D", "panel": "#241433", "text": "#F8EBFF", "bright": "#FFF4FF",
+        "muted": "#BCA5C9", "dim": "#8F789C", "accent": "#B76CFF", "deep": "#6D3AA4",
+        "success": "#FF6FB0", "outer": "#D58BFF", "gold": "#D9B6E8", "folder": "#E9C8F5",
+        "warning": "#FF9A7A", "fast": "#F06A72", "error": "#F34D7B", "subtle": "#462A5B"
+      }
+    },
+    {
+      "id": "red-violet",
+      "label": "Red-Violet",
+      "description": "Balanced red-pink and violet across the whole interface.",
+      "palette": {
+        "bg": "#080206", "panel": "#300C2B", "text": "#FFEAF8", "bright": "#FFF5FC",
+        "muted": "#C6A4BE", "dim": "#92708C", "accent": "#FF4C85", "deep": "#B12C63",
+        "success": "#A86DFF", "outer": "#FF75B0", "gold": "#E4B0CF", "folder": "#F2C4DE",
+        "warning": "#FF6B9D", "fast": "#F56855", "error": "#FF385F", "subtle": "#5A2350"
+      }
+    },
+    {
+      "id": "hot-pink-cyan",
+      "label": "Hot Pink Cyan",
+      "description": "Hot pink framing with high-contrast cyan success colors.",
+      "palette": {
+        "bg": "#0A0306", "panel": "#290C1C", "text": "#FFE9F3", "bright": "#FFF4F8",
+        "muted": "#C8A7B6", "dim": "#A07B8B", "accent": "#FF2D95", "deep": "#B21D65",
+        "success": "#2AEDE5", "outer": "#59F6ED", "gold": "#F0B6CE", "folder": "#F6C9DA",
+        "warning": "#FF9E5F", "fast": "#FF704C", "error": "#FF405F", "subtle": "#521D34"
+      }
+    },
+    {
+      "id": "scarlet-gold",
+      "label": "Scarlet Gold",
+      "description": "Scarlet structure with amber and gold status accents.",
+      "palette": {
+        "bg": "#0A0203", "panel": "#2A0B0C", "text": "#FFF0EA", "bright": "#FFF8F4",
+        "muted": "#C9ABA4", "dim": "#9C7E78", "accent": "#FF4A4A", "deep": "#B52228",
+        "success": "#FFB347", "outer": "#FFD06A", "gold": "#FFD089", "folder": "#FFD35F",
+        "warning": "#FF8C42", "fast": "#FF692F", "error": "#FF2944", "subtle": "#541C1C"
+      }
+    },
+    {
+      "id": "abyssal-blue",
+      "label": "Abyssal Blue",
+      "description": "Deep ocean navy, electric blue edges, and bioluminescent cyan.",
+      "palette": {
+        "bg": "#030A18", "panel": "#0C1D36", "text": "#DFEEFF", "bright": "#F1F8FF",
+        "muted": "#A1B8D6", "dim": "#798FAC", "accent": "#438DFF", "deep": "#285CAB",
+        "success": "#5CDCE8", "outer": "#73AEFF", "gold": "#A6C5FF", "folder": "#82D5F5",
+        "warning": "#EBA3DB", "fast": "#69BDFF", "error": "#FF6B92", "subtle": "#203A5B"
+      }
+    },
+    {
+      "id": "glacier-glass",
+      "label": "Glacier Glass",
+      "description": "Frosted blue-grey surfaces with ice-white and pale cyan light.",
+      "palette": {
+        "bg": "#101A22", "panel": "#1C2C38", "text": "#E4F5FC", "bright": "#F6FCFF",
+        "muted": "#ADC4CE", "dim": "#879FAA", "accent": "#A7E8FF", "deep": "#568CA6",
+        "success": "#A2E2D0", "outer": "#D0F3FF", "gold": "#BDCDEE", "folder": "#B2DFF0",
+        "warning": "#E5B0D3", "fast": "#83CDEB", "error": "#F694AB", "subtle": "#344B5A"
+      }
+    },
+    {
+      "id": "cobalt-velvet",
+      "label": "Cobalt Velvet",
+      "description": "Saturated cobalt against inky indigo with orchid accents.",
+      "palette": {
+        "bg": "#080B24", "panel": "#171D45", "text": "#E7EAFF", "bright": "#F7F7FF",
+        "muted": "#AFB5DC", "dim": "#888FB7", "accent": "#7185FF", "deep": "#424FB0",
+        "success": "#C493ED", "outer": "#9AA7FF", "gold": "#BFC3EF", "folder": "#B9A9FF",
+        "warning": "#EEA3CA", "fast": "#8CABFF", "error": "#FF789F", "subtle": "#303963"
+      }
+    },
+    {
+      "id": "tidal-teal",
+      "label": "Tidal Teal",
+      "description": "Petrol-blue depths and clean turquoise, offset by soft lilac.",
+      "palette": {
+        "bg": "#031315", "panel": "#0B2B30", "text": "#DDF7F5", "bright": "#F0FFFD",
+        "muted": "#9CBFBE", "dim": "#759D9E", "accent": "#35D3C9", "deep": "#208C88",
+        "success": "#98DFF4", "outer": "#70EBDB", "gold": "#B2C4EE", "folder": "#93E3DC",
+        "warning": "#D5A5EB", "fast": "#65BDFF", "error": "#FF7DAD", "subtle": "#205056"
+      }
+    },
+    {
+      "id": "jade-temple",
+      "label": "Jade Temple",
+      "description": "Rich mineral green with celadon text and silver-blue details.",
+      "palette": {
+        "bg": "#06130D", "panel": "#122D22", "text": "#E1F6E9", "bright": "#F4FFF7",
+        "muted": "#A7C5B3", "dim": "#809F8E", "accent": "#56D69B", "deep": "#2E9266",
+        "success": "#A5E8C2", "outer": "#83E4AF", "gold": "#AFCBD9", "folder": "#BAE5D1",
+        "warning": "#DCA7CD", "fast": "#73C6C5", "error": "#F7809E", "subtle": "#29513D"
+      }
+    },
+    {
+      "id": "mint-terminal",
+      "label": "Mint Terminal",
+      "description": "Bright phosphor mint on almost-black, with spare white and cyan.",
+      "palette": {
+        "bg": "#020B08", "panel": "#0C221B", "text": "#CBFFDF", "bright": "#EBFFF2",
+        "muted": "#97C7AD", "dim": "#729A84", "accent": "#48FFAC", "deep": "#209B68",
+        "success": "#A4FFD0", "outer": "#71FFC3", "gold": "#B8EEDC", "folder": "#85EEDD",
+        "warning": "#F3A4DC", "fast": "#51E8EF", "error": "#FF6BA6", "subtle": "#204636"
+      }
+    },
+    {
+      "id": "rainforest-radio",
+      "label": "Rainforest Radio",
+      "description": "Blue-green forest shade with vivid leaf green and magenta signals.",
+      "palette": {
+        "bg": "#091610", "panel": "#183124", "text": "#E3F2E9", "bright": "#F4FFF6",
+        "muted": "#A8C2B1", "dim": "#829E8D", "accent": "#7EDB89", "deep": "#43894E",
+        "success": "#53CFBC", "outer": "#A3E8AF", "gold": "#C3BBE8", "folder": "#96DACA",
+        "warning": "#EAA4D9", "fast": "#D28DE8", "error": "#FF83B4", "subtle": "#345440"
+      }
+    },
+    {
+      "id": "seafoam-slate",
+      "label": "Seafoam Slate",
+      "description": "Quiet slate-grey with washed seafoam and dusty blue accents.",
+      "palette": {
+        "bg": "#171E20", "panel": "#263236", "text": "#E4EFED", "bright": "#F8FFFD",
+        "muted": "#B4C5C2", "dim": "#8EAAA6", "accent": "#92CDBC", "deep": "#547F75",
+        "success": "#A4C9E3", "outer": "#B5E0D2", "gold": "#C6BFDA", "folder": "#B8D5D8",
+        "warning": "#D9ABCA", "fast": "#91B8D9", "error": "#E992AE", "subtle": "#415252"
+      }
+    },
+    {
+      "id": "ultraviolet-arcade",
+      "label": "Ultraviolet Arcade",
+      "description": "Electric purple and laser green on a deep ultraviolet stage.",
+      "palette": {
+        "bg": "#11051F", "panel": "#2A1041", "text": "#F0E3FF", "bright": "#FFF4FF",
+        "muted": "#C3AAD9", "dim": "#9A81B0", "accent": "#CE75FF", "deep": "#8841B8",
+        "success": "#91F5AE", "outer": "#E4A0FF", "gold": "#C0C6FF", "folder": "#AEF0DB",
+        "warning": "#FFA7E0", "fast": "#75DFFF", "error": "#FF629F", "subtle": "#4D2868"
+      }
+    },
+    {
+      "id": "lilac-fog",
+      "label": "Lilac Fog",
+      "description": "Soft lavender-grey with pearl text and muted periwinkle.",
+      "palette": {
+        "bg": "#1B1823", "panel": "#2D283A", "text": "#F0EAF7", "bright": "#FCF8FF",
+        "muted": "#C2B7D2", "dim": "#A092B4", "accent": "#C5ACE8", "deep": "#806AA3",
+        "success": "#A9D4CD", "outer": "#DCC7F2", "gold": "#D0C4DF", "folder": "#B7C8EC",
+        "warning": "#E5B4D2", "fast": "#B1B9E9", "error": "#F093B1", "subtle": "#494158"
+      }
+    },
+    {
+      "id": "orchid-ink",
+      "label": "Orchid Ink",
+      "description": "Mulberry ink and luminous orchid with restrained jade details.",
+      "palette": {
+        "bg": "#170C19", "panel": "#321A36", "text": "#F7E5F4", "bright": "#FFF6FE",
+        "muted": "#CEAFCA", "dim": "#A589A3", "accent": "#E99ADA", "deep": "#995B92",
+        "success": "#8FD5B9", "outer": "#F3B8E6", "gold": "#C9B5EC", "folder": "#BBDDDD",
+        "warning": "#F1ADCD", "fast": "#B697E7", "error": "#FF739F", "subtle": "#563458"
+      }
+    },
+    {
+      "id": "ruby-noir",
+      "label": "Ruby Noir",
+      "description": "Ruby-red framing, pale silver text, and cool cyan status lights.",
+      "palette": {
+        "bg": "#100409", "panel": "#2B101C", "text": "#F8E7ED", "bright": "#FFF6F9",
+        "muted": "#CFADB9", "dim": "#A78392", "accent": "#F64D7E", "deep": "#A42A52",
+        "success": "#77D3DD", "outer": "#FF89AA", "gold": "#B7C6DF", "folder": "#D8BEE8",
+        "warning": "#E6A4E0", "fast": "#8BB6F0", "error": "#FFB0C0", "subtle": "#50273A"
+      }
+    },
+    {
+      "id": "garnet-steel",
+      "label": "Garnet Steel",
+      "description": "Industrial blue-grey with desaturated garnet and brushed silver.",
+      "palette": {
+        "bg": "#15191F", "panel": "#272E39", "text": "#EDECF2", "bright": "#FAFAFF",
+        "muted": "#BCC0CC", "dim": "#949CAC", "accent": "#DC819C", "deep": "#94546C",
+        "success": "#9BC8BD", "outer": "#ECB0C1", "gold": "#B5C6DF", "folder": "#C3B6DE",
+        "warning": "#D4ADEB", "fast": "#91BBDB", "error": "#FF759C", "subtle": "#414958"
+      }
+    },
+    {
+      "id": "arctic-graphite",
+      "label": "Arctic Graphite",
+      "description": "Crisp graphite and silver with restrained arctic-blue accents.",
+      "palette": {
+        "bg": "#101113", "panel": "#24272B", "text": "#EBEEF3", "bright": "#FFFFFF",
+        "muted": "#B8BDC7", "dim": "#939AA7", "accent": "#BFCBDF", "deep": "#75839B",
+        "success": "#9BCAB9", "outer": "#E1E8F4", "gold": "#C2BDDB", "folder": "#AAC8E3",
+        "warning": "#DBB3D0", "fast": "#96B9E5", "error": "#F38FA6", "subtle": "#3E444D"
+      }
+    },
+    {
+      "id": "blueprint",
+      "label": "Blueprint",
+      "description": "A blue drafting surface with chalk-white lines and cyan notes.",
+      "palette": {
+        "bg": "#0B2040", "panel": "#153355", "text": "#E8F3FF", "bright": "#FFFFFF",
+        "muted": "#B4CCE5", "dim": "#91AFCF", "accent": "#C0DFFF", "deep": "#6B9BCB",
+        "success": "#8BE4D7", "outer": "#F0F8FF", "gold": "#C3C6F0", "folder": "#9FDBF5",
+        "warning": "#E8B5E5", "fast": "#81C4FF", "error": "#FFA0BD", "subtle": "#315478"
+      }
+    },
+    {
+      "id": "deep-space",
+      "label": "Deep Space",
+      "description": "Near-black space, distant blue stars, and nebula-pink accents.",
+      "palette": {
+        "bg": "#020208", "panel": "#111121", "text": "#E5E7F8", "bright": "#F9FAFF",
+        "muted": "#A5AACA", "dim": "#7D82A5", "accent": "#91B8FF", "deep": "#4868A8",
+        "success": "#ED89DB", "outer": "#CEA0FF", "gold": "#B6BDEC", "folder": "#91D8F2",
+        "warning": "#DDA3FF", "fast": "#F079C3", "error": "#FF759A", "subtle": "#2C2F4C"
+      }
+    },
+    {
+      "id": "peacock-silk",
+      "label": "Peacock Silk",
+      "description": "Jewel teal and sapphire with purple iridescence on dark petrol.",
+      "palette": {
+        "bg": "#07141D", "panel": "#102C3B", "text": "#DEF2F7", "bright": "#F3FDFF",
+        "muted": "#A1BDC8", "dim": "#7C9AA9", "accent": "#5EC4DC", "deep": "#357D9C",
+        "success": "#B48DF3", "outer": "#83DFC9", "gold": "#C0B3EB", "folder": "#8EBBF1",
+        "warning": "#E2A0DA", "fast": "#829FF8", "error": "#FF86AE", "subtle": "#274B60"
+      }
+    },
+    {
+      "id": "moonlit-fern",
+      "label": "Moonlit Fern",
+      "description": "Muted blue spruce and ghostly mint with pale lunar lavender.",
+      "palette": {
+        "bg": "#121C1B", "panel": "#233330", "text": "#E3F0E9", "bright": "#F6FFF9",
+        "muted": "#B0C5BB", "dim": "#8AA79A", "accent": "#B0D7C0", "deep": "#648B77",
+        "success": "#BAC1EF", "outer": "#D0E8D7", "gold": "#CBC3E4", "folder": "#AAD0DD",
+        "warning": "#E3B3DA", "fast": "#A1BCEC", "error": "#EE94B0", "subtle": "#3E554C"
+      }
+    }
+  ]
+}

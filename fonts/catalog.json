@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "policy": "Links and metadata only. Ask before downloading or installing; never redistribute local-only fonts.",
+  "fonts": [
+    {
+      "id": "cascadia-code",
+      "label": "Cascadia Code",
+      "family": "Cascadia Code",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip",
+      "licenseUrl": "https://github.com/microsoft/cascadia-code/blob/main/LICENSE"
+    },
+    {
+      "id": "jetbrains-mono",
+      "label": "JetBrains Mono",
+      "family": "JetBrains Mono",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip",
+      "licenseUrl": "https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt"
+    },
+    {
+      "id": "fira-code",
+      "label": "Fira Code",
+      "family": "Fira Code",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip",
+      "licenseUrl": "https://github.com/tonsky/FiraCode/blob/master/LICENSE"
+    },
+    {
+      "id": "commit-mono",
+      "label": "Commit Mono",
+      "family": "CommitMono",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/eigilnikolajsen/commit-mono/releases/download/v1.143/CommitMono-1.143.zip",
+      "licenseUrl": "https://github.com/eigilnikolajsen/commit-mono/blob/master/LICENSE-FONT"
+    },
+    {
+      "id": "monaspace-neon",
+      "label": "Monaspace Neon",
+      "family": "Monaspace Neon Var",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/githubnext/monaspace/releases/download/v1.400/monaspace-variable-v1.400.zip",
+      "licenseUrl": "https://github.com/githubnext/monaspace/blob/main/LICENSE"
+    },
+    {
+      "id": "ibm-plex-mono",
+      "label": "IBM Plex Mono",
+      "family": "IBM Plex Mono",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "licenseUrl": "https://github.com/IBM/plex/blob/master/LICENSE.txt"
+    },
+    {
+      "id": "source-code-pro",
+      "label": "Source Code Pro",
+      "family": "Source Code Pro",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.042R-u/1.062R-i/1.026R-vf/TTF-source-code-pro-2.042R-u_1.062R-i.zip",
+      "licenseUrl": "https://github.com/adobe-fonts/source-code-pro/blob/release/LICENSE.md"
+    },
+    {
+      "id": "iosevka",
+      "label": "Iosevka",
+      "family": "Iosevka",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://github.com/be5invis/Iosevka/releases/download/v34.8.1/PkgTTF-Iosevka-34.8.1.zip",
+      "licenseUrl": "https://github.com/be5invis/Iosevka/blob/main/LICENSE.md"
+    },
+    {
+      "id": "victor-mono",
+      "label": "Victor Mono",
+      "family": "Victor Mono",
+      "availability": "official-download",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://rubjo.github.io/victor-mono/VictorMonoAll.zip",
+      "licenseUrl": "https://github.com/rubjo/victor-mono/blob/master/LICENSE",
+      "note": "The official project-site archive is used because the current GitHub release has no attached font asset."
+    },
+    {
+      "id": "ubuntu-mono",
+      "label": "Ubuntu Mono",
+      "family": "Ubuntu Mono",
+      "availability": "official-download",
+      "license": "Ubuntu Font Licence 1.0",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ufl/ubuntumono/UbuntuMono-Regular.ttf",
+      "licenseUrl": "https://github.com/google/fonts/blob/main/ufl/ubuntumono/UFL.txt",
+      "note": "Ubuntu Mono is distinct from the newer Ubuntu Sans Mono family."
+    },
+    { "id": "inconsolata", "label": "Inconsolata", "family": "Inconsolata", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/inconsolata/Inconsolata%5Bwdth%2Cwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/inconsolata/OFL.txt" },
+    { "id": "space-mono", "label": "Space Mono", "family": "Space Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/SpaceMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/spacemono/OFL.txt" },
+    { "id": "courier-prime", "label": "Courier Prime", "family": "Courier Prime", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/courierprime/OFL.txt" },
+    { "id": "anonymous-pro", "label": "Anonymous Pro", "family": "Anonymous Pro", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/anonymouspro/AnonymousPro-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/anonymouspro/OFL.txt" },
+    { "id": "azeret-mono", "label": "Azeret Mono", "family": "Azeret Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/azeretmono/AzeretMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/azeretmono/OFL.txt" },
+    { "id": "martian-mono", "label": "Martian Mono", "family": "Martian Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/martianmono/MartianMono%5Bwdth%2Cwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/martianmono/OFL.txt" },
+    { "id": "spline-sans-mono", "label": "Spline Sans Mono", "family": "Spline Sans Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/splinesansmono/SplineSansMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/splinesansmono/OFL.txt" },
+    { "id": "sometype-mono", "label": "Sometype Mono", "family": "Sometype Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/sometypemono/SometypeMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/sometypemono/OFL.txt" },
+    { "id": "fragment-mono", "label": "Fragment Mono", "family": "Fragment Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/fragmentmono/FragmentMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/fragmentmono/OFL.txt" },
+    { "id": "xanh-mono", "label": "Xanh Mono", "family": "Xanh Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/xanhmono/XanhMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/xanhmono/OFL.txt" },
+    { "id": "syne-mono", "label": "Syne Mono", "family": "Syne Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/synemono/SyneMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/synemono/OFL.txt" },
+    { "id": "major-mono-display", "label": "Major Mono Display", "family": "Major Mono Display", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/majormonodisplay/MajorMonoDisplay-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/majormonodisplay/OFL.txt" },
+    { "id": "nova-mono", "label": "Nova Mono", "family": "NovaMono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/novamono/NovaMono.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/novamono/OFL.txt" },
+    { "id": "cutive-mono", "label": "Cutive Mono", "family": "Cutive Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/cutivemono/CutiveMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/cutivemono/OFL.txt" },
+    { "id": "share-tech-mono", "label": "Share Tech Mono", "family": "Share Tech Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/sharetechmono/ShareTechMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/sharetechmono/OFL.txt" },
+    { "id": "vt323", "label": "VT323", "family": "VT323", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/vt323/VT323-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/vt323/OFL.txt" },
+    { "id": "kode-mono", "label": "Kode Mono", "family": "Kode Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/kodemono/KodeMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/kodemono/OFL.txt" },
+    { "id": "lekton", "label": "Lekton", "family": "Lekton", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/lekton/Lekton-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/lekton/OFL.txt" },
+    { "id": "overpass-mono", "label": "Overpass Mono", "family": "Overpass Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/overpassmono/OFL.txt" },
+    { "id": "chivo-mono", "label": "Chivo Mono", "family": "Chivo Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/chivomono/ChivoMono%5Bwght%5D.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/chivomono/OFL.txt" },
+    { "id": "dm-mono", "label": "DM Mono", "family": "DM Mono", "availability": "official-download", "license": "OFL-1.1", "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmmono/DMMono-Regular.ttf", "licenseUrl": "https://github.com/google/fonts/blob/main/ofl/dmmono/OFL.txt" },
+    {
+      "id": "consolas",
+      "label": "Consolas",
+      "family": "Consolas",
+      "availability": "local-only",
+      "license": "Proprietary system font",
+      "sourceUrl": null,
+      "licenseUrl": "https://learn.microsoft.com/typography/font-list/consolas",
+      "note": "Detect locally only. Never download, copy, or redistribute this font."
+    },
+    {
+      "id": "menlo",
+      "label": "Menlo",
+      "family": "Menlo",
+      "availability": "local-only",
+      "license": "Proprietary system font",
+      "sourceUrl": null,
+      "licenseUrl": "https://support.apple.com/guide/font-book/welcome/mac",
+      "note": "Detect locally only. Never download, copy, or redistribute this font."
+    }
+  ]
+}

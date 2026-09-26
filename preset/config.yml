@@ -1,0 +1,96 @@
+setupVersion: 1
+
+# The installer resolves these environment-backed paths for the local profile.
+# Do not replace them with a machine-specific path.
+extensions:
+  - "{{profile_path}}/extension/index.ts"
+
+modelRoles:
+  default: "{{provider}}/{{model}}"
+  plan: "{{provider}}/{{model}}"
+  task: "{{provider}}/{{model}}"
+  vision: "{{provider}}/{{model}}"
+
+modelProviderOrder:
+  - "{{provider}}"
+
+extendedContext: false
+
+compaction:
+  enabled: true
+  midTurnEnabled: true
+  idleEnabled: false
+  thresholdPercent: 85
+  autoContinue: true
+
+skills:
+  enabled: true
+  enableSkillCommands: true
+  enableAgentsUser: false
+  enableAgentsProject: false
+  customDirectories:
+    - "{{profile_path}}/skills"
+
+task:
+  batch: true
+  maxConcurrency: 4
+  maxRecursionDepth: 1
+  enableLsp: true
+  maxRuntimeMs: 1200000
+
+lsp:
+  enabled: true
+  lazy: true
+  formatOnWrite: false
+  diagnosticsOnWrite: true
+  diagnosticsOnEdit: false
+
+tools:
+  abortOnFabricatedResult: true
+
+edit:
+  mode: apply_patch
+
+debug:
+  enabled: false
+launch:
+  enabled: false
+todo:
+  enabled: false
+browser:
+  enabled: false
+eval:
+  py: false
+  js: false
+  rb: false
+  jl: false
+
+memory:
+  backend: off
+memories:
+  enabled: false
+autolearn:
+  enabled: false
+
+startup:
+  quiet: true
+  changelogMode: hidden
+
+theme:
+  dark: rose-signal
+
+statusLine:
+  preset: custom
+  leftSegments:
+    - model
+    - mode
+    - path
+    - turn_time
+  rightSegments:
+    - usage
+
+display:
+  collapseToolRows: true
+
+composer:
+  shape: box
