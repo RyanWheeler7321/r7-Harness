@@ -4,17 +4,17 @@
 
 # r7Harness
 
-r7Harness is a simplified version of my own OMP-based agent workspace.
+r7Harness is a simplified version of my own agent setup, built on OMP.
 
-I started building it because the harness around an agent matters almost as much as the model inside it.
+I built it because an agent's behavior depends heavily on the environment it runs in, and a better-tuned harness gets much better results.
 
-- Compact workspace with session titles, turn timing, usage, status and a composer that stays put
+- Compact layout with session titles, turn timing, usage, status and an input box that stays put
 - Titles that show how big the current task is (quick, check, cook or deep) with a time estimate
-- Separate agent profiles, each with its own identity, config, login, sessions and local state
-- Global and project instructions, reusable skills and a few workflow keywords like "update"
-- Idle and working themes that follow the agent's state (`/theme` to switch), plus a list of good terminal fonts
-- Readiness checks, tool limits and file ownership so subagents don't step on each other
-- A pinned, hash-checked OMP build (currently 18.3.2) that's easy to roll back to an earlier build
+- Separate profiles for each agent, with their own identity, config, login and sessions
+- Global and project instructions, skills, and a few keywords like "update"
+- Idle and working themes that change with what the agent is doing (`/theme` to switch), plus a list of good terminal fonts
+- It won't change anything until setup checks pass, tools are limited in what they can change, and subagents can't edit the same files
+- Stays on one exact OMP version (currently 18.3.2), and it's easy to roll back to an earlier one
 - If RTK is installed, common read and test commands go through it for shorter output
 - A small optional AutoHotkey script for opening and arranging harness windows in Windows Terminal
 
@@ -30,7 +30,7 @@ curl -L -o omp-18.3.2.tar.gz https://github.com/can1357/oh-my-pi/archive/7853b4e
 ./bin/r7harness launch
 ```
 
-The install checks the source against `manifest.json`, applies the patch, builds OMP next to any OMP you already have and creates a separate profile. Log in from inside it with `/login`. `./bin/r7harness doctor` checks the install and `./bin/r7harness uninstall --yes` removes the build and the files it installed, and leaves your sessions, login and logs.
+The install checks the source against `manifest.json`, applies the patch, builds OMP next to any OMP you already have and creates a separate profile. Log in from inside it with `/login`. `./bin/r7harness doctor` checks the install and `./bin/r7harness uninstall --yes` removes the build and the files it installed, and keeps your sessions, login and logs.
 
 ## Personality
 
