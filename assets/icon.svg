@@ -1,24 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="r7Harness icon">
 <defs>
   <linearGradient id="chip" x1="34" y1="34" x2="94" y2="94" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#FF7AB0"/><stop offset="1" stop-color="#E0306F"/>
+    <stop offset="0" stop-color="#F64FC9"/><stop offset="1" stop-color="#DE21B3"/>
   </linearGradient>
   <linearGradient id="bg" x1="16" y1="8" x2="112" y2="120" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#221526"/><stop offset="1" stop-color="#100c15"/>
+    <stop offset="0" stop-color="#1E1322"/><stop offset="1" stop-color="#140E19"/>
   </linearGradient>
   <linearGradient id="rim" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#FF6FA8" stop-opacity="0.55"/>
-    <stop offset="0.45" stop-color="#FF6FA8" stop-opacity="0.08"/>
-    <stop offset="1" stop-color="#FF6FA8" stop-opacity="0.22"/>
+    <stop offset="0" stop-color="#FF62D2" stop-opacity="0.42"/>
+    <stop offset="0.45" stop-color="#FF62D2" stop-opacity="0.2"/>
+    <stop offset="1" stop-color="#FF62D2" stop-opacity="0.3"/>
   </linearGradient>
+  <linearGradient id="frame" x1="10" y1="6" x2="118" y2="122" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FF62D2" stop-opacity="0.9"/><stop offset="0.5" stop-color="#FF62D2" stop-opacity="0.62"/><stop offset="1" stop-color="#FF62D2" stop-opacity="0.75"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="64" cy="64" r="44" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FF62D2" stop-opacity="0.16"/><stop offset="1" stop-color="#FF62D2" stop-opacity="0"/>
+  </radialGradient>
 </defs>
 <path d="M24 0H104L128 24V104L104 128H24L0 104V24Z" fill="url(#bg)"/>
 <path d="M24.8 1.5H103.2L126.5 24.8V103.2L103.2 126.5H24.8L1.5 103.2V24.8Z" fill="none" stroke="url(#rim)" stroke-width="2"/>
-<path d="M32 10H96L118 32V96L96 118H32L10 96V32Z" fill="none" stroke="#3e3157" stroke-width="2"/>
-<path d="M50 24V34M78 24V34M50 94V104M78 94V104M24 50H34M24 78H34M94 50H104M94 78H104" stroke="#E0467F" stroke-width="4" stroke-linecap="round"/>
+<path d="M32 10H96L118 32V96L96 118H32L10 96V32Z" fill="none" stroke="url(#frame)" stroke-width="3.0" stroke-linejoin="round"/>
+<circle cx="64" cy="64" r="44" fill="url(#glow)"/>
+<path d="M50 24V34M78 24V34M50 94V104M78 94V104M24 50H34M24 78H34M94 50H104M94 78H104" stroke="#D92FAE" stroke-width="4" stroke-linecap="round"/>
 <path d="M44 34H84L94 44V84L84 94H44L34 84V44Z" fill="#1A1120" stroke="url(#chip)" stroke-width="4" stroke-linejoin="round"/>
-<circle cx="45" cy="45" r="2.4" fill="#FF7AB0"/>
-<circle cx="53" cy="45" r="2.4" fill="#B64B7E"/>
-<path d="M46 58L57 67L46 76" fill="none" stroke="#FF7AB0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="45" cy="45" r="2.4" fill="#FF62D2"/>
+<circle cx="53" cy="45" r="2.4" fill="#9E4499"/>
+<path d="M46 58L57 67L46 76" fill="none" stroke="#FF62D2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M63 77H80" stroke="#E7D0FF" stroke-width="5" stroke-linecap="round"/>
 </svg>
