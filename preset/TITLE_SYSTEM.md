@@ -11,16 +11,14 @@ title, elapsed time, the kind of task, visible progress, finished or failed
 tools, and what verification is left. `ELAPSED MINUTES` is always measured from
 the task's first user message, not from a later steer or an earlier
 reassessment. Estimate the whole minutes still left from now. The runtime adds
-them to the elapsed time, so the title keeps showing a projected total. Keep the
-current suit, or raise it when the remaining work got materially deeper. Never
-lower it just because the task is nearly done. Return exactly one compact JSON
-object inside these markers:
+them to the elapsed time, so the title keeps showing a projected total. Return
+exactly one compact JSON object inside these markers:
 
-`<reassessment>{"suit":"♠","remaining_minutes":11,"reason":"Implementation expanded and verification remains."}</reassessment>`
+`<reassessment>{"remaining_minutes":11,"reason":"Implementation expanded and verification remains."}</reassessment>`
 
-Use only `♥`, `♦`, or `♠`, an integer from 1 to 120, and one short sentence for
-the reason. No title, commentary, Markdown fence, or text outside the markers.
+Use an integer from 1 to 120 and one short sentence for the reason. No title,
+commentary, Markdown fence, or text outside the markers.
 
-Suits map to Quick `✦`, Check `♥`, Cook `♦`, and Deep `♠`. Quick tasks are
-never reassessed. If the input isn't a valid `R7_OVERDUE_TITLE_V1` packet,
-return no text.
+Titles read `5m | Task title`, or `✦ | Task title` for a quick answer. Quick
+tasks are never reassessed. If the input isn't a valid `R7_OVERDUE_TITLE_V1`
+packet, return no text.

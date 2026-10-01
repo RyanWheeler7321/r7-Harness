@@ -139,7 +139,7 @@ def load_repository_manifest(repository_root: Path) -> RepositoryManifest:
     version = _text(omp.get("version"))
     if not version:
         raise InstallError("repository manifest does not declare an OMP version")
-    # build id is the upstream version plus the patch version, e.g. 18.3.2-r7h2
+    # build id is the upstream version plus the patch version, e.g. 18.4.4-r7h3
     patch_version = _text(omp.get("patchVersion"))
     build_id = f"{version}-{patch_version}" if patch_version else version
     if not BUILD_ID_RE.fullmatch(build_id):

@@ -129,6 +129,24 @@ function profileSlug(): string {
 	return value.toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^-+|-+$/g, "") || "r7";
 }
 
+// The reply style prompt is on unless the profile's config.yml sets replyStyle.enabled: false.
+function replyStylePrompt(): string | undefined {
+	const profile = environmentPath(
+		process.env.R7HARNESS_PROFILE || process.env.PI_CODING_AGENT_DIR,
+		join(homeDirectory(), ".omp", "profiles", profileSlug(), "agent"),
+	);
+	try {
+		const config = readFileSync(join(profile, "config.yml"), "utf8");
+		const off =
+			/^replyStyle:[ \t]*\r?\n(?:[ \t]+.*\r?\n)*?[ \t]+enabled:[ \t]*false\b/m.test(config) ||
+			/^replyStyle:[ \t]*\{[^}]*\benabled:[ \t]*false\b/m.test(config);
+		if (off) return undefined;
+		return readFileSync(join(profile, "REPLY_STYLE.md"), "utf8").trim() || undefined;
+	} catch {
+		return undefined;
+	}
+}
+
 function resolveRoots(): Roots {
 	const home = homeDirectory();
 	const config = environmentPath(process.env.R7HARNESS_HOME, join(home, ".config", "r7harness"));
@@ -959,6 +977,10 @@ export default function r7HarnessExtension(pi: ExtensionAPI): void {
 		agentWorking = true;
 		await activateTheme(ctx, "working");
 		if (!recordOrFail("attention", "ok", "active")) return disable(initError);
+		if (!helperSession) {
+			const replyStyle = replyStylePrompt();
+			if (replyStyle) return { systemPrompt: [...event.systemPrompt, replyStyle] };
+		}
 	});
 
 	pi.on("agent_start", async () => {

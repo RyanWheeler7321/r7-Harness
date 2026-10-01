@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "name": "r7Harness",
-  "version": "0.1.0",
-  "harnessVersion": "0.1.0",
+  "version": "0.2.0",
+  "harnessVersion": "0.2.0",
   "draft": false,
   "omp": {
-    "version": "18.3.2",
-    "upstreamVersion": "18.3.2",
-    "patchVersion": "r7h2",
+    "version": "18.4.4",
+    "upstreamVersion": "18.4.4",
+    "patchVersion": "r7h3",
     "repository": "https://github.com/can1357/oh-my-pi",
-    "tag": "v18.3.2",
-    "commit": "7853b4e499936f9dcc13c9b64adb55f6b342aabf",
-    "sourceUrl": "https://github.com/can1357/oh-my-pi/archive/7853b4e499936f9dcc13c9b64adb55f6b342aabf.tar.gz",
-    "sourceSha256": "1731978ba5ad47d5a09f08ef449d33699755d4a6cfa9214bd31620411ae170b2",
-    "patch": "patches/omp-18.3.2-r7h2.patch",
-    "patchSha256": "3e759b22ea3c344136f4c13df3b72635afe2aa03169d3cac5b6987f5f083e0a4",
+    "tag": "v18.4.4",
+    "commit": "8ac1309bd8adaddc891eeb389c545345073875be",
+    "sourceUrl": "https://github.com/can1357/oh-my-pi/archive/8ac1309bd8adaddc891eeb389c545345073875be.tar.gz",
+    "sourceSha256": "8e9a78eca5f328d2b4c7869833c76f8eb66ac71437326d09b52090af4b43eaac",
+    "patch": "patches/omp-18.4.4-r7h3.patch",
+    "patchSha256": "8d6fc7ced20bf83d4bd410f310fcf2cd97940ea72d9428b828b93f7f02761da4",
     "natives": {
       "linux-x64": {
-        "url": "https://registry.npmjs.org/@oh-my-pi/pi-natives-linux-x64/-/pi-natives-linux-x64-18.3.2.tgz",
-        "sha256": "d3ca8b2f0a2c0d9863681afc1496516109ef6d4d4ae6c0a237b454c20d22a528"
+        "url": "https://registry.npmjs.org/@oh-my-pi/pi-natives-linux-x64/-/pi-natives-linux-x64-18.4.4.tgz",
+        "sha256": "f4c3cdec0d3ce5048564491ec3286bfe8c2648c42d2ec8cc6b4782eca0e0fc29"
       }
     }
   },

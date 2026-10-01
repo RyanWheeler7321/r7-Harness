@@ -1,0 +1,7 @@
+# Ctrl+Z undoes and Ctrl+Y redoes in the input box. Kill-ring paste moves to
+# Alt+Y, and cycling through it to Alt+Shift+Y.
+app.suspend: []
+tui.editor.undo: [ctrl+z, ctrl+-, ctrl+_]
+tui.editor.redo: ctrl+y
+tui.editor.yank: alt+y
+tui.editor.yankPop: alt+shift+y

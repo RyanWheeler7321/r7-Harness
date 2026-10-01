@@ -82,15 +82,42 @@ theme:
 statusLine:
   preset: custom
   leftSegments:
+    - pi
     - model
     - mode
-    - path
-    - turn_time
+    - jobs
   rightSegments:
     - usage
+  segmentOptions:
+    model:
+      showSubagentCount: true
 
 display:
   collapseToolRows: true
 
 composer:
   shape: box
+
+# Reply style for assistant replies. Set enabled to false for plain replies.
+replyStyle:
+  enabled: true
+  # colors:
+  #   money: "#4FE3F0"
+  #   time: "#6BF5A0"
+  #   date: "#FF3D9A"
+  #   plus: "#FF4F8B"
+  #   minus: "#4FA8FF"
+  #   result: "#E879F9"
+  #   key: "#C9A2FF"
+  #   ask: "#FFC857"
+  #   crucial: "#FF2E5D"
+  #   blocked: "#FF9A3C"
+  #   code: "#DD0E9F"
+  #   label: "#E879F9"
+  #   oldText: "#BF9BDF"
+  #   newText: "#3CD6C9"
+  #   stepLabel: "#FFFFFF"
+  #   stepNumber: "#FF3D9A"
+  #   stepRest: "#BF9BDF"
+  #   option: "#FFFFFF"
+  #   start: "#A4A4B0"
