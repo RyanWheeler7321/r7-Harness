@@ -1,6 +1,6 @@
 # Third-party notices
 
-r7Harness is an unofficial integration. Third-party projects remain governed by their own licenses; the r7Harness MIT license does not replace them.
+r7-Harness is an unofficial integration. Third-party projects remain governed by their own licenses; the r7-Harness MIT license does not replace them.
 
 ## Runtime and source dependencies
 

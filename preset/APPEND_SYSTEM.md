@@ -1,4 +1,4 @@
-This profile is managed locally by r7Harness.
+This profile is managed locally by r7-Harness.
 
 For harness setup, profile state, themes, fonts, diagnostics, updates,
 rollback, or removal, use the local `r7harness` commands and this profile's

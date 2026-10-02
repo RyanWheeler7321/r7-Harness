@@ -72,7 +72,7 @@ def rollback(paths: HarnessPaths, target_build: str | None = None) -> dict[str, 
         raise RollbackError(str(error)) from error
     builds = state["builds"]
     if not builds:
-        raise RollbackError("no owned r7Harness build is installed; use stock OMP directly")
+        raise RollbackError("no owned r7-Harness build is installed; use stock OMP directly")
     current = state.get("current_build")
     if target_build is None:
         candidates = [build_id for build_id in builds if build_id != current]

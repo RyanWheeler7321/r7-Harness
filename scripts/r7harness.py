@@ -43,14 +43,14 @@ def _location_options() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--repo-root", type=Path, default=_repository_root(), help="repository root (default: script parent)")
     parser.add_argument("--home", type=Path, help="override R7HARNESS_HOME")
-    parser.add_argument("--data-dir", type=Path, help="override r7Harness install data root")
+    parser.add_argument("--data-dir", type=Path, help="override r7-Harness install data root")
     parser.add_argument("--profile-root", type=Path, help="override isolated OMP profiles root")
     return parser
 
 
 def build_parser() -> argparse.ArgumentParser:
     locations = _location_options()
-    parser = argparse.ArgumentParser(prog="r7harness", description="r7Harness side-by-side profile manager")
+    parser = argparse.ArgumentParser(prog="r7harness", description="r7-Harness side-by-side profile manager")
     subcommands = parser.add_subparsers(dest="command", required=True)
 
     check = subcommands.add_parser("check", parents=[locations], help="inspect compatibility without changing anything")
@@ -114,8 +114,8 @@ def _json_or_text(value: dict[str, Any], text: str, as_json: bool) -> None:
 
 def _render_status(status: dict[str, object]) -> str:
     if not status["installed"]:
-        return "r7Harness status\n\nNo owned r7Harness installation is recorded."
-    rows = ["r7Harness status", "", f"Current build: {status['current_build']}", f"Current profile: {status['current_profile']}", "", "Owned builds:"]
+        return "r7-Harness status\n\nNo owned r7-Harness installation is recorded."
+    rows = ["r7-Harness status", "", f"Current build: {status['current_build']}", f"Current profile: {status['current_profile']}", "", "Owned builds:"]
     rows.extend(f"- {build['build_id']}: {build['path']}" for build in status["builds"])
     rows.append("Owned profiles:")
     rows.extend(f"- {profile['slug']}: {profile['path']}" for profile in status["profiles"])
@@ -225,7 +225,7 @@ def _run_launch(args: argparse.Namespace, paths: HarnessPaths) -> int:
     payload = {"command": command, "environment": {key: environment[key] for key in keys if key in environment}, **details}
     if args.dry_run:
         profile_line = f"OMP_PROFILE: {environment['OMP_PROFILE']}" if environment["OMP_PROFILE"] else f"PI_CODING_AGENT_DIR: {details['profile_path']}"
-        _json_or_text(payload, "\n".join(("r7Harness launch (dry run)", "", "Command: " + " ".join(command), profile_line)), args.json)
+        _json_or_text(payload, "\n".join(("r7-Harness launch (dry run)", "", "Command: " + " ".join(command), profile_line)), args.json)
         return 0
     if args.json:
         print(json.dumps(payload, indent=2, sort_keys=True))
@@ -245,7 +245,7 @@ def _run_update_check(args: argparse.Namespace, paths: HarnessPaths) -> int:
     }
     text = "\n".join(
         (
-            "r7Harness update check",
+            "r7-Harness update check",
             "",
             f"Installed build: {payload['installed_build'] or 'none'}",
             f"Repository build: {manifest.build_id}",
@@ -260,11 +260,11 @@ def _run_uninstall(args: argparse.Namespace, paths: HarnessPaths) -> int:
     plan = uninstall_plan(paths)
     preview = plan.as_dict()
     if not args.yes:
-        text = "\n".join(("r7Harness uninstall preview", "", *(f"- {path}" for path in plan.paths), "", "Re-run with --yes to remove only these owned paths."))
+        text = "\n".join(("r7-Harness uninstall preview", "", *(f"- {path}" for path in plan.paths), "", "Re-run with --yes to remove only these owned paths."))
         _json_or_text({"preview": preview, "will_remove": False}, text, args.json)
         return 0
     removed = uninstall(paths)
-    text = "\n".join(("r7Harness uninstall", "", "Removed:", *(f"- {path}" for path in removed)))
+    text = "\n".join(("r7-Harness uninstall", "", "Removed:", *(f"- {path}" for path in removed)))
     _json_or_text({"preview": preview, "will_remove": True, "result": {"removed_paths": [str(path) for path in removed]}}, text, args.json)
     return 0
 
@@ -297,7 +297,7 @@ def run(argv: Sequence[str] | None = None) -> int:
         if args.command == "uninstall":
             return _run_uninstall(args, paths)
     except (CommandError, InstallError, ProfileError, RollbackError) as error:
-        print(f"r7Harness: {error}", file=sys.stderr)
+        print(f"r7-Harness: {error}", file=sys.stderr)
         return 2
     parser.error(f"unsupported command: {args.command}")
     return 2

@@ -1,9 +1,9 @@
 ---
 name: r7harness
-description: Use only for local r7Harness setup, status, diagnostics, appearance, update checks, rollback, or removal.
+description: Use only for local r7-Harness setup, status, diagnostics, appearance, update checks, rollback, or removal.
 ---
 
-# r7Harness management
+# r7-Harness management
 
 Use this skill only when the user asks to manage the harness itself. Start with
 the smallest matching command:

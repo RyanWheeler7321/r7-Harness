@@ -1,13 +1,13 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-; Optional Windows companion for r7Harness running in WSL.
+; Optional Windows companion for r7-Harness running in WSL.
 ; Set the environment variables below before starting the script to change the defaults.
 
 global TerminalExecutable := EnvOrDefault("R7HARNESS_TERMINAL_EXE", "wt.exe")
 global ExpectedTerminalProcess := EnvOrDefault("R7HARNESS_TERMINAL_PROCESS", "WindowsTerminal.exe")
 global SessionCommand := EnvOrDefault("R7HARNESS_LAUNCH_COMMAND", "wsl.exe -e bash -lc " Chr(34) "r7harness launch" Chr(34))
-global WindowTitle := "r7Harness"
+global WindowTitle := "r7-Harness"
 global LayoutMode := 0
 
 SetWinDelay -1
@@ -38,11 +38,11 @@ RecallOrLaunch() {
 LaunchSession() {
     global TerminalExecutable, SessionCommand, WindowTitle
 
-    ; Each session gets its own window. The title starts as r7Harness, then follows the task title.
+    ; Each session gets its own window. The title starts as r7-Harness, then follows the task title.
     command := QuoteArgument(TerminalExecutable) " -w new --title " WindowTitle " " SessionCommand
     try Run(command)
     catch as err
-        MsgBox "Could not start r7Harness.`n`n" err.Message, "r7Harness", "Iconx"
+        MsgBox "Could not start r7-Harness.`n`n" err.Message, "r7-Harness", "Iconx"
 }
 
 CycleLayout() {

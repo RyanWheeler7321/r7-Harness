@@ -59,7 +59,7 @@ class CompatibilityReport:
 
     def render(self) -> str:
         width = max((len(component.name) for component in self.components), default=0)
-        rows = ["r7Harness compatibility", "", f"Environment: {self.environment} ({self.architecture})", ""]
+        rows = ["r7-Harness compatibility", "", f"Environment: {self.environment} ({self.architecture})", ""]
         rows.extend(
             f"{component.name:<{width}}  {component.status:<12} {component.detail}"
             for component in self.components

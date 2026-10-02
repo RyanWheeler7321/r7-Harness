@@ -47,7 +47,7 @@ width without wrapping. If it would wrap, shorten it or use lines. An optional
 last column), `bars`, `heat`, `half` or `full`.
 
 A local picture on its own line, `![caption](path)`, shows inside the reply in
-r7Shell. Other terminals show only the caption.
+r7-Shell. Other terminals show only the caption.
 
 Common shapes, title first:
 - done: the result, 2 to 4 `✓` lines, `▶` only for the user's action

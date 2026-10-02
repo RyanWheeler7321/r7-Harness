@@ -35,7 +35,7 @@ class DoctorReport:
 
     def render(self) -> str:
         width = max((len(check.name) for check in self.checks), default=0)
-        rows = ["r7Harness doctor", ""]
+        rows = ["r7-Harness doctor", ""]
         rows.extend(f"{check.name:<{width}}  {check.status:<12} {check.detail}" for check in self.checks)
         rows.extend(("", f"Overall: {'healthy' if self.healthy else 'attention required'}"))
         return "\n".join(rows)

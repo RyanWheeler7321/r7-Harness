@@ -1208,7 +1208,7 @@ index e8a8fdb..364e9cf 100644
  		this.#scheduleIdleRecap();
  		this.sendErrorNotification(event);
  		this.sendCompletionNotification(event);
-+		// r7Shell flashes the window when a turn ends while it's in the background.
++		// r7-Shell flashes the window when a turn ends while it's in the background.
 +		if (IN_R7SHELL) this.ctx.ui.terminal.write(R7_DONE_MARK);
  	}
  
@@ -9567,7 +9567,7 @@ index 05dd262..03b3c07 100644
  			this.#jumpMode = null;
  		}
  
-+		// r7Shell's mouse editing: `CSI 7321 ; row ; col ~` moves the cursor to that spot, and
++		// r7-Shell's mouse editing: `CSI 7321 ; row ; col ~` moves the cursor to that spot, and
 +		// `CSI 7321 ; row ; col ; row2 ; col2 ~` deletes the text between two spots (a selection
 +		// being replaced). Rows count the editor's visible text rows from 0, columns its text cells.
 +		const mouseEdit = /^\x1b\[7321;(\d+);(\d+)(?:;(\d+);(\d+))?~$/.exec(data);
@@ -9877,7 +9877,7 @@ index 6c30241..50becd5 100644
  			}
  
  			case "paragraph": {
-+				// A picture on its own line in a reply: r7Shell draws it over blank rows,
++				// A picture on its own line in a reply: r7-Shell draws it over blank rows,
 +				// with the alt text as its caption underneath.
 +				const picture = this.#reply ? token.tokens?.filter(t => !(t.type === "text" && !t.text.trim())) : undefined;
 +				const image =
@@ -10285,17 +10285,17 @@ index 0000000..9e14e3f
 +	return paint(palette.start, "━".repeat(Math.max(1, width)));
 +}
 +
-+// ---- r7Shell -------------------------------------------------------------------------
-+// r7Shell (R7SHELL_SESSION in the environment) draws reply titles 1.3x and pictures in
++// ---- r7-Shell -------------------------------------------------------------------------
++// r7-Shell (R7SHELL_SESSION in the environment) draws reply titles 1.3x and pictures in
 +// replies. A private OSC 7321 at the start of a row tells it what the row is; other
 +// terminals never get one and show the plain version.
 +export const IN_R7SHELL = !!process.env.R7SHELL_SESSION;
 +export const R7_TITLE_MARK = "\x1b]7321;title\x07";
-+// Sent once at startup so r7Shell knows this is r7Harness (mouse edits, task title row).
++// Sent once at startup so r7-Shell knows this is r7-Harness (mouse edits, task title row).
 +export const R7_HELLO_MARK = "\x1b]7321;hello\x07";
 +// Sent when a turn ends.
 +export const R7_DONE_MARK = "\x1b]7321;done\x07";
-+// Rows kept blank above an image's caption; r7Shell draws the picture over them.
++// Rows kept blank above an image's caption; r7-Shell draws the picture over them.
 +const R7_IMAGE_ROWS_MAX = 18;
 +// A row that stays when blank edges are trimmed.
 +export const R7_RESERVED_ROW = "\x1b[0m";
@@ -10357,13 +10357,13 @@ index 0000000..9e14e3f
 +	return path.startsWith("/") ? path : "";
 +}
 +
-+// An image paragraph in a reply: how many rows and columns r7Shell should give it.
++// An image paragraph in a reply: how many rows and columns r7-Shell should give it.
 +export function replyImage(href: string, width: number): ReplyImage | undefined {
 +	if (!IN_R7SHELL) return undefined;
 +	const path = localImagePath(href);
 +	const size = path ? readImageSize(path) : null;
 +	if (!size) return undefined;
-+	// r7Shell cells are about 2.25 times as tall as wide.
++	// r7-Shell cells are about 2.25 times as tall as wide.
 +	let columns = Math.max(8, Math.min(width, REPLY_TEXT_COLUMNS));
 +	let rows = Math.round((columns * size.h) / size.w / 2.25);
 +	if (rows > R7_IMAGE_ROWS_MAX) {

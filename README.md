@@ -1,10 +1,10 @@
-![r7Harness terminal workspace](assets/r7harness-main.png)
+![r7-Harness terminal workspace](assets/r7harness-main.png)
 
-<img src="assets/icon.svg" alt="r7Harness icon" width="96">
+<img src="assets/icon.svg" alt="r7-Harness icon" width="96">
 
-# r7Harness
+# r7-Harness
 
-r7Harness is a simplified version of my own agent setup, built on OMP.
+r7-Harness is a simplified version of my own agent setup, built on OMP.
 
 I built it because an agent's behavior depends heavily on the environment it runs in, and a better-tuned harness gets much better results.
 
@@ -18,15 +18,15 @@ I built it because an agent's behavior depends heavily on the environment it run
 - Stays on one exact OMP version (currently 18.4.4), and it's easy to roll back to an earlier one
 - If RTK is installed, common read and test commands go through it for shorter output
 - A small optional AutoHotkey script for opening and arranging harness windows in Windows Terminal
-- Works with r7Shell for bigger reply titles, pictures in replies and mouse editing in the input box
+- Works with r7-Shell for bigger reply titles, pictures in replies and mouse editing in the input box
 
 ## Setup
 
-It runs on WSL with Windows Terminal or r7Shell. You need git, Python 3 and Bun 1.4.0.
+It runs on WSL with Windows Terminal or r7-Shell. You need git, Python 3 and Bun 1.4.0.
 
 ```bash
-git clone https://github.com/RyanWheeler7321/r7Harness.git
-cd r7Harness
+git clone https://github.com/RyanWheeler7321/r7-Harness.git
+cd r7-Harness
 curl -L -o omp-18.4.4.tar.gz https://github.com/can1357/oh-my-pi/archive/8ac1309bd8adaddc891eeb389c545345073875be.tar.gz
 ./install.sh --source omp-18.4.4.tar.gz --agent-name Nova --provider anthropic --model claude-sonnet-5-5
 ./bin/r7harness launch
@@ -46,4 +46,4 @@ It's still early. The install and the main features work, but expect rough edges
 
 More information: [r7321.art/tools/r7harness](https://r7321.art/tools/r7harness/)
 
-*r7Harness is an unofficial modification of [OMP](https://github.com/can1357/oh-my-pi). It isn't officially associated with the OMP project, OpenAI/Codex, Anthropic/Claude, or their developers.*
+*r7-Harness is an unofficial modification of [OMP](https://github.com/can1357/oh-my-pi). It isn't officially associated with the OMP project, OpenAI/Codex, Anthropic/Claude, or their developers.*

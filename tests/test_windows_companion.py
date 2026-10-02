@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "extras" / "windows" / "r7Harness.ahk"
+SCRIPT = ROOT / "extras" / "windows" / "r7-Harness.ahk"
 
 
 class WindowsCompanionStaticTests(unittest.TestCase):
@@ -25,7 +25,7 @@ class WindowsCompanionStaticTests(unittest.TestCase):
         self.assertIn("--title ", self.source)
         # task titles have to reach the window title
         self.assertNotIn("--suppressApplicationTitle", self.source)
-        self.assertIn('WindowTitle := "r7Harness"', self.source)
+        self.assertIn('WindowTitle := "r7-Harness"', self.source)
         self.assertIn('"wsl.exe -e bash -lc " Chr(34) "r7harness launch" Chr(34)', self.source)
         self.assertIn('"R7HARNESS_LAUNCH_COMMAND"', self.source)
 

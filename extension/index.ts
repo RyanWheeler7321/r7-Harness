@@ -611,13 +611,13 @@ function isUrlWrite(toolName: string, input: unknown): boolean {
 
 function ownerFromPrompt(prompt: unknown): string | undefined {
 	if (typeof prompt !== "string") return undefined;
-	return /^# r7Harness Owner\s*\n([^\n]+)\s*$/im.exec(prompt)?.[1]?.trim() || undefined;
+	return /^# r7-Harness Owner\s*\n([^\n]+)\s*$/im.exec(prompt)?.[1]?.trim() || undefined;
 }
 
 function guardTask(text: string, intent: ScopeIntent, owner: string): string {
 	const files = intent.kind === "absent" ? "\n\n# Files\n- read-only" : "";
 	const scope = intent.kind === "write" ? "Edit only inside # Files." : "This helper is read-only.";
-	return `${text.trimEnd()}${files}\n\n# r7Harness Owner\n${owner}\n\n${scope} Send progress or questions with write agent://Main. Do not spawn helpers or use shell, process, browser, MCP, eval, debug, or launch tools.`;
+	return `${text.trimEnd()}${files}\n\n# r7-Harness Owner\n${owner}\n\n${scope} Send progress or questions with write agent://Main. Do not spawn helpers or use shell, process, browser, MCP, eval, debug, or launch tools.`;
 }
 
 function githubIsReadOnly(input: unknown): boolean {
@@ -685,7 +685,7 @@ const UPDATE_REQUEST = /^[^\w/]*(?:update\s*(?:[.!?,:;]|$)|any updates?\b|give m
 const UPDATE_PAUSE = /\bupdate pause\b/i;
 const UPDATE_MIN_CHARS = 40;
 const UPDATE_BLOCK_CAP = 2;
-const UPDATE_NOTE_TAG = "[r7Harness: ";
+const UPDATE_NOTE_TAG = "[r7-Harness: ";
 const UPDATE_NOTES: Record<UpdateMode, string> = {
 	idle: `${UPDATE_NOTE_TAG}the user asked for an update. Answer in visible reply text before any tool call; thinking doesn't count.]`,
 	running: `${UPDATE_NOTE_TAG}the user asked for an update mid-task. Reply with only the update as visible text, in a message with no tool calls. The task resumes right after.]`,
@@ -761,12 +761,12 @@ function notify(ctx: ExtensionContext, message: string, level: "info" | "warning
 }
 
 export default function r7HarnessExtension(pi: ExtensionAPI): void {
-	pi.setLabel("r7Harness");
+	pi.setLabel("r7-Harness");
 
 	// OMP can load this module once for the main session and its helpers, so all state lives here.
 	let roots: Roots | undefined;
 	let ready = false;
-	let initError = "r7Harness has not initialized";
+	let initError = "r7-Harness has not initialized";
 	let helperSession = false;
 	let adoptedOwner = "";
 	let adoptedScopes: Scope[] = [];
@@ -785,7 +785,7 @@ export default function r7HarnessExtension(pi: ExtensionAPI): void {
 		} catch (error) {
 			ready = false;
 			initError = error instanceof Error ? error.message : String(error);
-			pi.logger.error("r7Harness log failure", { error: initError, operation });
+			pi.logger.error("r7-Harness log failure", { error: initError, operation });
 			return false;
 		}
 	}
@@ -940,12 +940,12 @@ export default function r7HarnessExtension(pi: ExtensionAPI): void {
 			try {
 				if (await configureThemes(ctx)) await activateTheme(ctx, "idle", true);
 			} catch (error) {
-				pi.logger.warn("r7Harness themes unavailable", { error: String(error) });
+				pi.logger.warn("r7-Harness themes unavailable", { error: String(error) });
 			}
 		} catch (error) {
 			initError = error instanceof Error ? error.message : String(error);
-			pi.logger.error("r7Harness initialization failed", { error: initError });
-			notify(ctx, `r7Harness safeguards are unavailable: ${initError}`, "error");
+			pi.logger.error("r7-Harness initialization failed", { error: initError });
+			notify(ctx, `r7-Harness safeguards are unavailable: ${initError}`, "error");
 		}
 	});
 
@@ -1114,12 +1114,12 @@ export default function r7HarnessExtension(pi: ExtensionAPI): void {
 
 		if (!ready && !peerMessage && requiresReadiness(event.toolName, input)) {
 			recordOrFail("mutation-gate", "blocked");
-			return { block: true, reason: `r7Harness is not ready; mutation is blocked. ${initError}` };
+			return { block: true, reason: `r7-Harness is not ready; mutation is blocked. ${initError}` };
 		}
 
 		if (event.toolName === "task") {
 			if (helperSession) return { block: true, reason: "Helpers can't spawn nested helpers." };
-			if (!roots) return { block: true, reason: `r7Harness is not ready. ${initError}` };
+			if (!roots) return { block: true, reason: `r7-Harness is not ready. ${initError}` };
 			try {
 				const transformed = transformedTasks(roots, instanceId, input, ctx.cwd, event.toolCallId);
 				if (event.toolCallId && transformed.owners.length > 0) {

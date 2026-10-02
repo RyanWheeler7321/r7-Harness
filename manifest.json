@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "name": "r7Harness",
+  "name": "r7-Harness",
   "version": "0.2.0",
   "harnessVersion": "0.2.0",
   "draft": false,
@@ -14,7 +14,7 @@
     "sourceUrl": "https://github.com/can1357/oh-my-pi/archive/8ac1309bd8adaddc891eeb389c545345073875be.tar.gz",
     "sourceSha256": "8e9a78eca5f328d2b4c7869833c76f8eb66ac71437326d09b52090af4b43eaac",
     "patch": "patches/omp-18.4.4-r7h3.patch",
-    "patchSha256": "8d6fc7ced20bf83d4bd410f310fcf2cd97940ea72d9428b828b93f7f02761da4",
+    "patchSha256": "9e0aa0ba23f7a7a4224d530052c5186b6b34add695094c26910fa5b06f4d7501",
     "natives": {
       "linux-x64": {
         "url": "https://registry.npmjs.org/@oh-my-pi/pi-natives-linux-x64/-/pi-natives-linux-x64-18.4.4.tgz",
@@ -45,7 +45,7 @@
       "bundled": false
     },
     "windowsCompanion": {
-      "path": "extras/windows/r7Harness.ahk",
+      "path": "extras/windows/r7-Harness.ahk",
       "requires": "AutoHotkey v2",
       "bundledRuntime": false
     }

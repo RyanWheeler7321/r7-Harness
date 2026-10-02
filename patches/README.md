@@ -6,7 +6,7 @@
 - Turn timer in the π icon, which keeps the finished time while idle, and the subagent count before the model
 - The session folder on its own row under the Ctrl+P model track
 - Reply style for assistant replies: colored markers, borderless tables and numbered questions (`replyStyle.enabled`, `replyStyle.colors`)
-- r7Shell support, only when `R7SHELL_SESSION` is set: bigger reply titles, pictures in replies, mouse editing in the input box and a signal when a turn finishes
+- r7-Shell support, only when `R7SHELL_SESSION` is set: bigger reply titles, pictures in replies, mouse editing in the input box and a signal when a turn finishes
 - Remaining weekly usage and a compact context percentage
 - One-line tool rows (`display.collapseToolRows`) with ✘ for failed and ⓘ for skipped calls
 - An input box that doesn't jump when live output shrinks, editor redo (`tui.editor.redo`), and Ctrl+C clearing a draft as one step Ctrl+Z can undo
@@ -25,8 +25,8 @@
 ```bash
 git clone --branch v18.4.4 --depth 1 https://github.com/can1357/oh-my-pi.git omp-18.4.4
 cd omp-18.4.4
-git apply --check ../r7Harness/patches/omp-18.4.4-r7h3.patch
-git apply ../r7Harness/patches/omp-18.4.4-r7h3.patch
+git apply --check ../r7-Harness/patches/omp-18.4.4-r7h3.patch
+git apply ../r7-Harness/patches/omp-18.4.4-r7h3.patch
 bun install --frozen-lockfile
 cd packages/coding-agent
 bun run build
